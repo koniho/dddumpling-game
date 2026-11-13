@@ -18,3 +18,14 @@ h1,h2,h3,p{overflow-wrap:break-word}h1,h2,h3{font-weight:900}h1{font-size:clamp(
 @media(max-width:760px){.friends-layout{grid-template-columns:minmax(0,1fr)}}
 @media(max-width:380px){.hero-art .phone{width:170px}.hero-art .phone-back{right:20px}.hero-art .phone-front{left:20px}}
 .ribbon{transform:none}
+
+/* The story: a compact editorial section about the game's development. */
+.story-section{background:#fff9ef;border-top:1px solid var(--line)}
+.story-layout{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(35px,7vw,110px);align-items:start}
+.story-heading h2{max-width:480px}
+.story-heading .text-link{display:inline-block;margin-top:12px}
+.story-lede{color:var(--muted);max-width:350px;font-size:16px}
+.story-copy{border:1.5px solid var(--ink);border-radius:24px;padding:clamp(25px,4vw,44px);background:#f4e5f0;box-shadow:8px 8px 0 #d9c5df;font-size:16px;line-height:1.7}
+.story-copy p{margin:0 0 18px}
+.story-copy p:last-child{margin-bottom:0}
+@media(max-width:760px){.story-layout{grid-template-columns:1fr;gap:28px}.story-copy{box-shadow:5px 5px 0 #d9c5df}}
